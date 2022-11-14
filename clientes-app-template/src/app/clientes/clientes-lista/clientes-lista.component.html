@@ -1,6 +1,6 @@
 <h1 class="mt-4">Clientes</h1>
 <ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active">Consulta</li>
+    <li class="breadcrumb-active active">Consulta</li>
 </ol>
 <div class="container">
     <div class="row">
@@ -26,7 +26,7 @@
     <div class="row">
         <div class="col-md-12">
             <table class="table table-condensede table-hover">
-                <thead>
+                <thead class="cabecamodal">
                     <tr>
                         <th>ID</th>
                         <th>Nome</th>
@@ -59,7 +59,7 @@
     <div id="modalDelecao" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header cabecamodal">
                     <h4>Confirmação</h4>
                 </div>
                 <div class="modal-body" *ngIf="clienteSelecionado">

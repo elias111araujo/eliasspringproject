@@ -9,16 +9,12 @@ import springproject.model.entity.Cliente;
 import springproject.model.repository.ClienteRepository;
 
 @SpringBootApplication
+
 public class ClientesApplication {
 
 
-
-
-
-
     public static void main(String[] args) {
-
-
+        
         SpringApplication.run(ClientesApplication.class, args);
 
     }

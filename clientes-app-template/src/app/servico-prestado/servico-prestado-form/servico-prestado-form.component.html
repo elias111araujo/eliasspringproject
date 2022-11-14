@@ -1,4 +1,4 @@
-<h1 class="mt-4"></h1>
+<h1 class="mt-4">Serviços Prestados </h1>
 <ol class="breadcrumb mb-4">
     <li class="breadcrumb-active active">Novo</li>
 </ol>
@@ -20,7 +20,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label>Cliente: </label>
-                    <select class="form-control" [ngModelOptions]="{standalone: true}"
+                    <select class="form-control"  [ngModelOptions]="{standalone: true}"
                      [(ngModel)]="servico.idCliente">
                         <option value="">Selecione...</option>
                         <option *ngFor="let cliente of clientes" [ngValue]="cliente.id">
@@ -34,8 +34,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="">Descrição</label>
-                    <input class="form-control" [(ngModel)]="servico.descricao" type="text" name="descricao" id="inputDescricao">
+                    <label for="">Descrição:</label>
+                    <input placeholder="Descreva o Serviço" class="form-control" [(ngModel)]="servico.descricao" type="text" name="descricao" id="inputDescricao">
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Data:</label>
-                    <input class="form-control" [(ngModel)]="servico.data" type="text" name="data" id="inputData">
+                    <input placeholder="Padrão: DD/MM/AAAA" class="form-control" [(ngModel)]="servico.data" type="text" name="data" id="inputData">
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Preço:</label>
-                    <input class="form-control" [(ngModel)]="servico.preco" type="text" name="preco" id="inputPreco">
+                    <input placeholder="Preço R$" class="form-control" [(ngModel)]="servico.preco" type="text" name="preco" id="inputPreco">
                 </div>
             </div>
         </div>

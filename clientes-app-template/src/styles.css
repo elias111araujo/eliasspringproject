@@ -70,6 +70,17 @@ body {
   background-color: #fff;
 }
 
+#mincor{
+  color: white;
+}
+
+.cabecamodal{
+  background-color: #7413e2;
+  color: white;
+}
+
+
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -4680,6 +4691,7 @@ a.badge:hover, a.badge:focus {
   border-radius: 10rem;
 }
 
+
 .badge-primary {
   color: #fff;
   background-color: #007bff;
@@ -6069,6 +6081,7 @@ a.close.disabled {
 .bg-primary {
   background-color: #007bff !important;
 }
+
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
