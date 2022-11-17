@@ -21,7 +21,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/servicos-prestados")
 @RequiredArgsConstructor
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://gerenciador-spring-front.herokuapp.com/")
 public class ServicoPrestadoController {
 
 

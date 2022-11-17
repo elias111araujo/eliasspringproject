@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/clientes")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://gerenciador-spring-front.herokuapp.com/")
 public class ClienteController {
 
     private final ClienteRepository repository;
