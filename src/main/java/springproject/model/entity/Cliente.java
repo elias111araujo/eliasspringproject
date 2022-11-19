@@ -1,6 +1,7 @@
 package springproject.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -8,6 +9,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+import java.util.List;
 
 
 @Entity
@@ -39,6 +41,10 @@ public class Cliente {
     public void prepersist(){
         setDataCadastro(LocalDate.now());
     }
+
+    @JsonIgnore
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "cliente")
+    List<ServicoPrestado> servicos;
 
 }
 
